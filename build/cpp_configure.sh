@@ -36,5 +36,5 @@ cd target/automake
 touch config.h.in
 autoreconf --force --install
 rm -f config.h.in~
-./configure
+./configure --host=arm-linux --disable-shared
 touch ../cppconfigure
